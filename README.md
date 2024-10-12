@@ -3,6 +3,9 @@ cd mysite
 python manage.py startapp food
 python manage.py startapp food
 python manage.py runserver
+
+python manage.py makemigrate food
+python manage.py sqlmigrate food 001
 python manage.py migrate
 
 

@@ -10,5 +10,7 @@ def index(request):
 
 
 
-def show(request):
-    return HttpResponse("<h1>im Show me</h1>")
+
+
+def item(request):
+    return HttpResponse("<h1>im item Page</h1>")
