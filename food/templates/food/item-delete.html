@@ -1,0 +1,26 @@
+{% extends 'food/base.html' %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block body %}
+    <form method="POST">
+    
+    {% csrf_token %}
+    {{ form }}
+    <h2>Are you sure uh want to delete ?
+        {{item.item_name}}
+    </h2>
+    <button type="submit">Confirm</button>
+    </form>
+    
+    
+    {% endblock %}
+</body>
+</html>
